@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="logo">
+        <b>Portfo<span>lio.</span></b>
+    </div>
+    <div class="container">
+        <div id="page1">
+        <div class="info">
+        <p>Hello, my name is<br>
+            <span id="mynme">Jigar<br> Solanki</span><br>
+            And i'm a <span id="spin"></span></p>
+            <a href="#" class="active">Like</a>
+        </div>
+       </div>
+        <div id="page2"><div class="ab">
+            <h1 style="text-align: center;">About me</h1><br>
+            <h4 style="color: red; text-align: center;">---who i am---</h4><br>
+            <img src="D:\myportfolio\IMG_20220219_161241_433.jpg" alt="My pic" height="250px" width="250px" class="center"><br>
+            I'm Jigar Solanki and <br>
+            I'm a <span id="spin2"></span><br>
+            <p>self-motivated and hardworking fresher seeking for an opportunity to work in a challenging environment to prove my skills
+                and utilize my knowledge & intelligence in the growth of the organization.
+            </p>
+            <a href="D:\myportfolio\js.pdf" download="j.S resume"><button class="btn2">Download Resume</button></a><br>
+        </div></div>
+        <div id="page3">
+            <div class="skills">
+                <h1>My Skills</h1>
+                <div class="w3-light-grey">
+                    <div class="w3-blue" style="width:35%"> <b>core Java</b></div>
+                </div>
+                  <br>
+                  <div class="w3-light-grey">
+                    <div class="w3-blue" style="width:85%"> <b>HTML5</b></div>
+                  </div>
+                  <br>
+                  <div class="w3-light-grey">
+                    <div class="w3-blue" style="width:65%"> <b>CSS</b></div>
+                  </div><br>
+                  <div class="w3-light-grey">
+                    <div class="w3-blue" style="width:74%"> <b>javascript</b></div>
+                  </div><br>
+                  <div class="w3-light-grey">
+                    <div class="w3-blue" style="width:70%"><b> C</b></div>
+                  </div><br>
+                  <div class="w3-light-grey">
+                    <div class="w3-blue" style="width:70%"><b> SQL</b></div>
+                  </div><br>
+            </div>
+        </div>
+        <div id="page4">
+            <h1>Contact me</h1>
+            <P class="w3-black"><b>---get in touch---</b></P>
+            <i>Feel free to Drop me a message</i>
+            <h3><b>Name:</b>Jigar Solanki</h3>
+            <h3><b>Address:</b>Gujarat,India</h3>
+            <h3><b>Email:</b>sjigar2000@gmail.com</h3>
+            <h3><b>Message me</b></h3>
+            <form>
+                <input type="text" placeholder="Name" width="50%"><br><br><input type="email" placeholder="email" width="50%" required><br><br>
+                <input type="text" placeholder="Subject"><br><br>
+                <textarea placeholder="Describe..."></textarea>
+            </form>
+          <button class="btn3">Send Message</button>
+
+
+        </div>
+        <div id="page5"></div>
+        <div id="page6"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('a').click(function(){
+          $('a').toggleClass('active')
+        })
+      })
+    </script>
+</body>
+</html>

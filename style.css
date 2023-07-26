@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css for page 1 */
+.logo{
+    color: white;
+    font-size: 33px;
+   text-align: center;
+   background-color: black;
+   position: fixed;
+}
+.logo span{
+    color: #00a0fb;
+}
+#page1{
+    background-image: url("bcg.jpg");
+    height: 100vh;
+    border-top: 1px dotted greenyellow;
+    background-attachment: fixed;
+   
+}
+#page1 p{
+    font-size: 30px;
+    color: aliceblue;
+}
+#spin{
+    color: #f73d3c;
+    font-size: 30px;
+    background-color: #252525;
+}
+#spin::after{
+    content: "";
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    0%{
+        content:"Computer Science Student"
+    }
+    50%{
+        content: "web developer";
+    }
+}
+#mynme{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+#btn1{
+    height: 33px;
+    width: 85px;
+    background-color:darkred;
+    color: white;
+}
+.info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+.info a{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 75px;
+    background: #fff;
+    top: 85%;
+    left: 50%;
+    border-radius: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #262626;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.info a.active{
+    background: transparent;
+    color: #fff;
+}
+.info a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff0047;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateX(-200px) rotate(-325deg);
+    opacity: 0;
+    visibility: hidden;
+}
+.info a.active:before{
+    left: 30.5px;
+    transform: translateX(0) rotate(35deg);
+    border-bottom-left-radius: 75px;
+    border-top-left-radius: 75px;
+    opacity: 1;
+    visibility: visible;
+}
+.info a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff0047;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateX(200px) rotate(325deg);
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.info a.active:after{
+    right: 30.5px;
+    transform: translateX(0) rotate(-35deg);
+    border-bottom-right-radius: 75px;
+    border-top-right-radius: 75px;
+    opacity: 1;
+    visibility: visible;
+}
+/* css for page 2 */
+#spin2{
+    color: #f73d3c;
+    font-size: 30px;
+}
+#spin2::after{
+    content: "";
+    animation: spin2 2s linear infinite;
+}
+@keyframes spin2{
+    0%{
+        content:"Problem Solver"
+    }
+    70%{
+        content: "CS Student";
+    }
+}
+.ab{
+    font-size: 24px;
+}
+
+#page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(229, 227, 227);
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.btn2{
+    height: 35px;
+    background-color: #f73d3c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all ease 0.5s;
+}
+.btn2:hover{
+    box-shadow: 5px 5px
+    0px #000;
+    cursor: pointer;
+}
+#page3{
+    border-top: 5px double darkblue;
+}
+.skills{
+    border-top: 5px double darkblue;
+    background-color: rgb(229, 227, 227);
+}
+
+/* css for page number 4 */
+#page4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(229, 227, 227);
+}
+
+.btn3{
+    border-radius: 10px;
+    background-color: #00a0fb;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.btn3:hover{
+    box-shadow: 5px 5px
+    0px #000 ;
+}
